@@ -1,0 +1,49 @@
+# Core APIs and logic
+tavily-python
+requests
+python-dotenv
+
+# FastAPI backend
+fastapi
+uvicorn
+
+# Optional frontend templating (if you use HTML with FastAPI)
+jinja2
+markdown
+
+# Data handling (if needed for enhancements)
+pydantic
+
+# Optional: Embedding, if you want vector storage later
+# langchain
+# chromadb
+# sentence-transformers
+ 
+ # Core LLM + RAG Framework
+langchain
+langchain-community
+langchain-core
+
+# Vector Store
+faiss-cpu # OR use chromadb==0.4.24 if using Chroma instead
+
+# LLM Inference + Web Search
+tavily-python
+groq        # Groq's official Python SDK
+
+# LLM Communication
+openai     # Used with LangChain's OpenAI-compatible models (optional)
+httpx     # Better request handling for async
+
+# Backend API
+fastapi
+uvicorn
+
+# Frontend Rendering (Jinja)
+jinja2
+
+# Data & Parsing
+markdown
+pydantic
+python-dotenv
+requests

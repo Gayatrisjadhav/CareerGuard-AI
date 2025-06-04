@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CareerGuard AI</title>
+  <link rel="stylesheet" href="/static/style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+<div class="navbar">
+  <h1>🚀 CareerGuard AI</h1>
+  <button onclick="toggleDarkMode()">🌗 Toggle Mode</button>
+</div>
+
+<form method="post" action="/analyze" class="query-form">
+  <input type="text" name="query" placeholder="Ask about your career risk..." class="query-box" required />
+  <button type="submit">Analyze</button>
+</form>
+
+{% if result %}
+<div class="result-container">
+  <section id="risk" class="result-section tilt">{{ result.risk|safe }}</section>
+  <section id="alternatives" class="result-section tilt">{{ result.alternatives|safe }}</section>
+  <section id="skills" class="result-section tilt">{{ result.skills|safe }}</section>
+</div>
+{% endif %}
+
+<script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.3/dist/vanilla-tilt.min.js"></script>
+<script src="/static/script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+   
