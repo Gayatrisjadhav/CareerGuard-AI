@@ -10,8 +10,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-TAVILY_API_KEY = os.getenv("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")
-GROQ_API_KEY = os.getenv("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")
+TAVILY_API_KEY = os.getenv("-----")
+GROQ_API_KEY = os.getenv("--------")
 GROQ_MODEL = "llama3-70b-8192"  
   
 tavily_client = TavilyClient(api_key=TAVILY_API_KEY)
